@@ -10,3 +10,7 @@ app.use("/identify", identifyRoute);
 app.listen(3000, () => {
   console.log("Server running on port 3000");
 });
+
+app.get("/", (req, res) => {
+  res.send("Bitespeed Identity Reconciliation API is running");
+});
